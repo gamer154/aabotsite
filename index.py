@@ -16,6 +16,10 @@ app = Flask(__name__)
 def test():
     return  "Hello there my friend !!"
 	
+@app.route('/home', methods=['GET'])
+def home():
+    return  render_template("home.html")
+
 	
 if __name__ == "__main__":
 	port = int(os.getenv('PORT', 5000))
