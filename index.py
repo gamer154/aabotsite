@@ -19,7 +19,7 @@ def test():
 	
 @app.route('/home', methods=['GET'])
 def home():
-    triggerwelcome()
+    #triggerwelcome()
     return  render_template("home.html")
 
 def triggerwelcome():
