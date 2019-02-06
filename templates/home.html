@@ -5,15 +5,24 @@
     <title>AA Chatbot</title>
 	<img src="static/images/aabanner.png">
   </head>
+  <style>
+	#foo {
+		position: fixed;
+		bottom: 0;
+		right: 0;
+	}
+  </style>
   <body>
     <h1> Automation Anywhere Chatbot </h1>
     <p> Automation Anywhere Chatbot Example </p>
-	<iframe
-    allow="microphone;"
-    width="350"
-    height="430"
-	align="right"
-    src="https://console.dialogflow.com/api-client/demo/embedded/4d09c106-0647-4f63-89e5-d9bdcec7a6f7">
-	</iframe>
+	<div id="foo">
+		<iframe
+		allow="microphone;"
+		width="350"
+		height="430"
+		align="right"
+		src="https://console.dialogflow.com/api-client/demo/embedded/4d09c106-0647-4f63-89e5-d9bdcec7a6f7">
+		</iframe>
+	</div>
   </body>
 </html>
